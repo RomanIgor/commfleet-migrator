@@ -1,0 +1,14 @@
+{
+  "templates": {
+    "Fahrzeuge": {
+      "file": "templates/vehicle_data_v1.xlsx",
+      "required": ["Kennzeichen", "Fahrgestell-Nr."],
+      "description": "Standardtemplate für Fahrzeugstammdaten"
+    },
+    "Business_Partner": {
+      "file": "templates/business_partners_v1.xlsx",
+      "required": ["Name", "Name 2"],
+      "description": "Template für Geschäftspartner"
+    }
+  }
+}

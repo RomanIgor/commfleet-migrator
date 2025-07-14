@@ -1,0 +1,23 @@
+# Erstellt die Datei users.json mit einem Standard-Admin
+import json
+import hashlib
+from pathlib import Path
+
+# Passwort hashen mit SHA-256
+def hash_password(password):
+    return hashlib.sha256(password.encode()).hexdigest()
+
+# Benutzerstruktur
+admin_user = {
+    "admin": {
+        "password": hash_password("parolaadmin"),
+        "role": "admin"
+    }
+}
+
+# Datei schreiben
+user_file = Path("users.json")
+with user_file.open("w", encoding="utf-8") as f:
+    json.dump(admin_user, f, indent=2)
+
+print("✅ Admin-Benutzer erstellt: admin / parolaadmin")
