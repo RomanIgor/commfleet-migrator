@@ -30,3 +30,4 @@ venv/
 
 # Backup fișiere test
 templates_backup.json
+users.json
