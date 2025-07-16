@@ -65,7 +65,8 @@ def main():
     is_admin = get_user_role(st.session_state.username) == "admin"
     page = st.sidebar.radio(
         "Navigation",
-        ["Migration", "Benutzerverwaltung"] if is_admin else ["Migration"]
+      ##  ["Migration", "Benutzerverwaltung"] if is_admin else ["Migration"]
+        ["Migration"]
     )
 
     if st.sidebar.button("🔓 Logout"):
