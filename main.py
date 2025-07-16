@@ -73,12 +73,6 @@ def main():
         st.session_state.username = ""
         st.rerun()
 
-    # Admin-Seite starten
-    if page == "Benutzerverwaltung":
-        st.info("Die Benutzerverwaltung wird in einem neuen Fenster geöffnet...")
-        os.system("streamlit run admin_user_manager.py")
-        return
-
     # Datenmigration starten
     st.title("🔁 Commfleet Data Migrator")
 
